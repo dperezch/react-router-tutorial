@@ -5,6 +5,7 @@ import Contacto from "./pages/Contacto";
 import Blog from "./pages/Blog";
 import LayoutPublic from "./layouts/LayoutPublic";
 import NotFound from "./pages/NotFound";
+import BlogDetails from "./pages/BlogDetails";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route element={<Inicio />} path="/"></Route>
             <Route element={<Contacto />} path="/contacto" />
             <Route element={<Blog />} path="/blog" />
+            <Route element={ <BlogDetails/> } path="/blog/:id" ></Route>
             
           </Route>
           <Route element={<NotFound/>} path="*" ></Route>
