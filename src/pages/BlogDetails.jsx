@@ -14,8 +14,7 @@ const BlogDetails = () => {
   return (
     <>
       <h1>
-        {" "}
-        {data.id} - {data.title}{" "}
+        {data.id} - {data.title}
       </h1>
       <p> {data.body} </p>
       <Link to="/blog" className="btn btn-dark">
